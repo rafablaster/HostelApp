@@ -1,16 +1,21 @@
 import hostelapp.hostel.Address;
 import hostelapp.hostel.Guest;
 
+
 public class GuestTest {
     public static void main(String[] args) {
-
         Guest florentino = new Guest();
         florentino.setName("Florentino");
         florentino.setLastName("Ariza");
+        florentino.setEmail("ariza@gmail.com");
 
-        /*
-        * Date
-        * */
+        Date birthday = new Date();
+        birthday.setDay(35);
+        birthday.setMonth(2);
+        birthday.setYear(1970);
+
+        florentino.setBirthday(birthday);
+
 
         Address address = new Address();
         address.setAddress("Rua Joaquim Lázaro Gomes");
@@ -26,15 +31,20 @@ public class GuestTest {
 
 
 
+        System.out.println("Name...: " + florentino.getName());
+        System.out.println("Last name...: " + florentino.getLastName());
+        System.out.println("Email...: " + florentino.getEmail());
+        System.out.println("Birthdate..: " + florentino.getBirthday());
+        System.out.println("Address...: " + florentino.getAddress().getAddress());
+        System.out.println("City....: " + city);
+        System.out.println("State...: " + florentino.getAddress().getState());
+        System.out.println("Zip Code..: " + florentino.getAddress().getZipCode());
+        System.out.println("Country..: " + florentino.getAddress().getCountry());
 
 
 
 
-
-
-
-
-
+        //-------------------------------------------------------------------------------------------------------------
 
         Guest fermina = new Guest();
         fermina.setName("Fermina");
@@ -44,19 +54,6 @@ public class GuestTest {
 
         Guest gregor = new Guest("Gregor");
         gregor.setLastName("Samsa");
-
-
-        //impressão na tela
-
-        System.out.println("Name...: " + florentino.getName());
-        System.out.println("Last name...: " + florentino.getLastName());
-        System.out.println("Address...: " + florentino.getAddress().getAddress());
-        //System.out.println("Email...:" + florentino.getEmail() );
-        //System.out.println("Birthdate...:" + florentino.getBirthday().getBirthdayFormattedAsString());
-        System.out.println("City....: " + city);
-        System.out.println("State...: " + florentino.getAddress().getState());
-        System.out.println("Zip Code..: " + florentino.getAddress().getZipCode());
-        System.out.println("Country..: " + florentino.getAddress().getCountry());
 
         System.out.println();
         System.out.println("Name...: " + fermina.getName());
@@ -72,4 +69,3 @@ public class GuestTest {
 
     }
 }
-
