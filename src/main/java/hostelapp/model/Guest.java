@@ -1,4 +1,4 @@
-package hostelapp.hostel;
+package hostelapp.model;
 
 import java.util.*;
 
@@ -14,6 +14,7 @@ public class Guest {
 
     private List<Reservation> reservations = new ArrayList<>();
 
+    private Title title;
 
     public Guest() {
         this("");
@@ -83,7 +84,11 @@ public class Guest {
         reservations.add(reservation);
     }
 
+    public Title getTitle() {
+        return title;
+    }
 
-
-
+    public void setTitle(Title title) {
+        this.title = title;
+    }
 }

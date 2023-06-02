@@ -1,7 +1,6 @@
-package hostelapp.hostel;
+package hostelapp.model;
 
 public class Reservation {
-
     private Date reservationDate;
     private Date checkinDate;
     private Date checkoutDate;
@@ -46,6 +45,4 @@ public class Reservation {
                 ", checkoutDate=" + checkoutDate +
                 '}';
     }
-
-
 }

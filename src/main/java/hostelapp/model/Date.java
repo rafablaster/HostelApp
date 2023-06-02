@@ -1,4 +1,4 @@
-package hostelapp.hostel;
+package hostelapp.model;
 
 public class Date {
     private int day;
@@ -42,6 +42,4 @@ public class Date {
     public String toString() {
         return this.day + "/" + this.month + "/" + this.year;
     }
-
-
 }
